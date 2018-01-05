@@ -1,0 +1,17 @@
+@charset "utf-8";
+@import "base/setting";
+@import "base/reset";
+@import "base/base";
+//layout
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
+//parts
+@import "module/nav";
+@import "module/btn";
+@import "module/list";
+@import "module/title";
+//pages
+@import "page/index";
+@import "page/about";
+@import "page/contact";

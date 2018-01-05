@@ -1,0 +1,15 @@
+    body {
+    min-width: 320px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+    //SP用CSS----------------------------------------
+    //TAB用CSS---------------------------------------
+    @media screen and (min-width: 768px) {}
+    //PC用CSS----------------------------------------
+    @media screen and (min-width: 1200px) {}
