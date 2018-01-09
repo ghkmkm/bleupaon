@@ -1,0 +1,21 @@
+.header {
+    position: relative;
+    text-align: center;
+    &-logo {
+        width: calc(150/320*100%);
+        position: absolute;
+        top: 20px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
+
+.slider {
+    display: none;
+}
+
+.slider.slick-initialized {
+    display: block;
+}

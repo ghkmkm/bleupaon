@@ -1,0 +1,53 @@
+    .section {
+        padding: 50px 15px;
+        font-size: 1.8rem;
+        text-align: center;
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
+    }
+    
+    .main-contents {
+        &-txtbox {
+            text-align: left;
+        }
+        &-txt {
+            margin: 30px 0;
+            br {
+                display: none;
+                @media screen and (min-width: 768px) {
+                    display: block;
+                }
+            }
+        }
+    }
+    
+    //共通項（Pick Up）-----------------------
+    .pick-up-item {
+        width: calc(142/320*100%);
+        min-width: calc(150/320*100%);
+        line-height: calc(172/320*100%);
+        text-align: center;
+        vertical-align: bottom;
+        padding-top: 110px;
+        margin: 5px;
+        &-1 {
+            background: url(../img/img_index_pic1.png) no-repeat center center/contain;
+        }
+        &-2 {
+            background: url(../img/img_index_pic2.png) no-repeat center center/contain;
+        }
+        &-3 {
+            background: url(../img/img_index_pic3.png) no-repeat center center/contain;
+        }
+        &-4 {
+            background: url(../img/img_index_pic4.png) no-repeat center center/contain;
+        }
+    }
+    
+    .bg-line {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background: url(../img/img_index_pic_line_up.png) no-repeat center top, url(../img/img_index_pic_line_down.png) no-repeat center bottom;
+    }

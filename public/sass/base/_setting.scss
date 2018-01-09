@@ -1,13 +1,17 @@
-    %cf {
-        &::after {
-            content: "";
-            clear: both;
-            display: block;
-        }
+$fc:#333;
+$fc2:#fff;
+$hc:#ff4242;
+$tc:#81d8d0;
+%cf {
+    &::after {
+        content: "";
+        clear: both;
+        display: block;
     }
-    
-    *,
-    *::before,
-    *::after {
-        box-sizing: border-box;
-    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}

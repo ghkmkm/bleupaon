@@ -1,0 +1,14 @@
+.gnav {
+    display: none;
+    &-link {
+        font-size: 3rem;
+        width: 100%;
+        line-height: 70px;
+        color: $fc;
+        background-color: $tc;
+        &:hover {
+            color: $hc;
+            background-color: $fc2;
+        }
+    }
+}

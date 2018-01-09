@@ -1,5 +1,10 @@
-    body {
+html,
+body {
     min-width: 320px;
+    font-family: メイリオ, Meiryo, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    font-size: 10px;
+    color: $fc;
+    line-height: 1.5;
 }
 
 img {
@@ -8,8 +13,28 @@ img {
     vertical-align: bottom;
 }
 
-    //SP用CSS----------------------------------------
-    //TAB用CSS---------------------------------------
-    @media screen and (min-width: 768px) {}
-    //PC用CSS----------------------------------------
-    @media screen and (min-width: 1200px) {}
+.wrap {
+    margin: 0 auto;
+    @media screen and (min-width: 768px) {
+        width: 1200px;
+    }
+}
+
+.ttl-main,
+.gnav-link {
+    font-family: 'Sofia', cursive;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+//SP用CSS----------------------------------------
+//TAB用CSS---------------------------------------
+@media screen and (min-width: 768px) {}
+
+//PC用CSS----------------------------------------
+@media screen and (min-width: 1200px) {}
