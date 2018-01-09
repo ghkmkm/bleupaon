@@ -24,6 +24,22 @@ br.br-shop {
     -webkit-transform: scale(1, 1);
 }
 
+.js-inview-slide {
+    transition: .8s;
+    opacity: 0;
+}
+
+.js-inview-header {
+    transition: 2s;
+    transition-delay: 1s;
+    opacity: 0;
+}
+
+.anime-header {
+    opacity: 1;
+}
+
+
 //bg-------------------------------------
 .bg-3 {
     background: url(../img/bg_index_about.png) no-repeat -30px center;
