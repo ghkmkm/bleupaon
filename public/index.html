@@ -16,14 +16,14 @@
 <body id="home">
 
     <header class="header">
-        <ul class="header-slide">
+        <ul class="header-slide js-inview-slide">
             <li class="header-slide-item"><img src="img/bg_header_index.jpg" alt="スライド画像" class="header-slide-img"></li>
             <li class="header-slide-item"><img src="img/bg_header_about.jpg" alt="スライド画像" class="header-slide-img"></li>
             <li class="header-slide-item"><img src="img/bg_header_cafe.jpg" alt="スライド画像" class="header-slide-img"></li>
             <li class="header-slide-item"><img src="img/bg_header_dolce.jpg" alt="スライド画像" class="header-slide-img"></li>
             <li class="header-slide-item"><img src="img/bg_header_contact.jpg" alt="スライド画像" class="header-slide-img"></li>
         </ul>
-        <h1 class="header-logo"><img src="img/logo_bleupaon.png" alt="logo"></h1>
+        <h1 class="header-logo js-inview-header"><img src="img/logo_bleupaon.png" alt="logo"></h1>
         <div class="btn-index-menu320">
             <a class="menu-trigger" href="#">
                 <span></span>
@@ -32,30 +32,53 @@
             </a>
         </div>
         <!--btn-index-menu320-->
-        <nav class="gnav">
-            <ul class="gnav-list">
-                <li class="gnav-item">
-                    <a href="index.html" class="gnav-link">Home</a>
+        <nav class="gnav gnav-320 gnav-header js-inview-header">
+            <ul class="gnav-list gnav-320-list gnav-header-list">
+                <li class="gnav-item gnav-320-item gnav-header-link">
+                    <a href="index.html" class="gnav-link gnav-320-link gnav-header-link">Home</a>
                 </li>
-                <li class="gnav-item">
-                    <a href="about.html" class="gnav-link">About</a>
+                <li class="gnav-item gnav-320-item">
+                    <a href="about.html" class="gnav-link gnav-320-link gnav-header-link">About</a>
                 </li>
-                <li class="gnav-item">
-                    <a href="cafe.html" class="gnav-link">Cafe</a>
+                <li class="gnav-item gnav-320-item">
+                    <a href="cafe.html" class="gnav-link gnav-320-link gnav-header-link">Cafe</a>
                 </li>
-                <li class="gnav-item">
-                    <a href="dolce.html" class="gnav-link">Dolce</a>
+                <li class="gnav-item gnav-320-item">
+                    <a href="dolce.html" class="gnav-link gnav-320-link gnav-header-link">Dolce</a>
                 </li>
-                <li class="gnav-item">
-                    <a href="contact.html" class="gnav-link">Contact</a>
+                <li class="gnav-item gnav-320-item">
+                    <a href="contact.html" class="gnav-link gnav-320-link gnav-header-link">Contact</a>
                 </li>
             </ul>
         </nav>
+
+        <nav class="gnav gnav-320">
+            <ul class="gnav-list gnav-320-list">
+                <li class="gnav-item gnav-320-item">
+                    <a href="index.html" class="gnav-link gnav-320-link">Home</a>
+                </li>
+                <li class="gnav-item gnav-320-item">
+                    <a href="about.html" class="gnav-link gnav-320-link">About</a>
+                </li>
+                <li class="gnav-item gnav-320-item">
+                    <a href="cafe.html" class="gnav-link gnav-320-link">Cafe</a>
+                </li>
+                <li class="gnav-item gnav-320-item">
+                    <a href="dolce.html" class="gnav-link gnav-320-link">Dolce</a>
+                </li>
+                <li class="gnav-item gnav-320-item">
+                    <a href="contact.html" class="gnav-link gnav-320-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+
+
     </header>
 
     <main class="main">
-        <div class="wrap">
-            <section class="section main-contents bg-3">
+        <div class="wrap wrap-main">
+            <section class="main-contents bg-3">
                 <h2 class="ttl-main">About Us</h2>
                 <div class="main-contents-inner">
                     <img src="img/img_index_1.png" alt="店舗画像" class="js-inview">
@@ -64,34 +87,34 @@
                             「BleuPaon BAKESHOP」では、北海道産食材を中心とした<br>ベイクショップを運営しております。<br>ベイクは、食事やおやつなど、頻繁に食べる機会があるからこそ<br>素材にこだわり、ひとつひとつしっかりと手作りしお届けしています。
                         </p>
                         <div class="btn-index-kochira">
-                            <a href="about.html" class="btn-index-kochira-link"><img src="img/btn_index_kochira.png" alt="詳しくはこちら"></a>
+                            <a href="cafe.html" class="btn-index-kochira-link">詳しくはこちら</a>
                         </div>
-                        <!--btn-top-->
+                        <!--btn-index-kochira-->
                     </div>
                     <!--main-contents-txtbox-->
                 </div>
                 <!--main-contents-inner-->
             </section>
 
-            <section class="section main-contents bg-4">
+            <section class="main-contents bg-4">
                 <h2 class="ttl-main">Cafe</h2>
-                <div class="main-contents-inner">
+                <div class="main-contents-inner flex-reverse">
                     <img src="img/img_index_2.png" alt="店舗画像" class="js-inview">
                     <div class="main-contents-txtbox">
                         <p class="main-contents-txt">
                             カフェブルーパンでは北海道産の素材で作られた<br>こだわりのフレンチを堪能できます。<br>店内もオーナーこだわりの手作り家具や<br>大きめのソファー席でゆったりした空間になっております。
                         </p>
                         <div class="btn-index-kochira">
-                            <a href="cafe.html" class="btn-index-kochira-link"><img src="img/btn_index_kochira.png" alt="詳しくはこちら"></a>
+                            <a href="cafe.html" class="btn-index-kochira-link">詳しくはこちら</a>
                         </div>
-                        <!--btn-top-->
+                        <!--btn-index-kochira-->
                     </div>
                     <!--main-contents-txtbox-->
                 </div>
                 <!--main-contents-inner-->
             </section>
 
-            <section class="section main-contents bg-0">
+            <section class="main-contents bg-0">
                 <h2 class="ttl-main">Dolce</h2>
                 <div class="main-contents-inner">
                     <img src="img/img_index_3.png" alt="店舗画像" class="js-inview">
@@ -100,80 +123,82 @@
                             北海道の新鮮な生乳・甜菜100％の砂糖などを利用し<br>ケーキやプリンの他にもスコーンやマフィン<br> グラノーラなどを販売しております。
                         </p>
                         <div class="btn-index-kochira">
-                            <a href="dolce.html" class="btn-index-kochira-link"><img src="img/btn_index_kochira.png" alt="詳しくはこちら"></a>
+                            <a href="cafe.html" class="btn-index-kochira-link">詳しくはこちら</a>
                         </div>
-                        <!--btn-top-->
+                        <!--btn-index-kochira-->
                     </div>
                     <!--main-contents-txtbox-->
                 </div>
                 <!--main-contents-inner-->
             </section>
 
-            <section class="section main-contents">
+            <section class="main-contents">
                 <h2 class="ttl-main">Pick Up!</h2>
-                <div class="main-contents-inner bg-line">
-                    <div class="pick-up-item pick-up-item-1" class="js-inview">
-                        <p class="pick-up-txt">北海道ドルチェ</p>
+                <img src="img/img_index_pic_line_up.png" alt="境界線画像" class="bg-line">
+                <div class="main-contents-inner pick-up-box">
+                    <div class="pick-up-item pick-up-item-1 js-inview">
+                        <p class="pick-up-txt dolce">北海道ドルチェ</p>
                     </div>
-                    <div class="pick-up-item pick-up-item-2" class="js-inview">
+                    <div class="pick-up-item pick-up-item-2 js-inview">
                         <p class="pick-up-txt">カフェメニュー</p>
                     </div>
-                    <div class="pick-up-item pick-up-item-3" class="js-inview">
+                    <div class="pick-up-item pick-up-item-3 js-inview">
                         <p class="pick-up-txt">クリスマスケーキ</p>
                     </div>
-                    <div class="pick-up-item pick-up-item-4" class="js-inview">
+                    <div class="pick-up-item pick-up-item-4 js-inview">
                         <p class="pick-up-txt">新商品</p>
                     </div>
                 </div>
                 <!--main-contents-inner-->
+                <img src="img/img_index_pic_line_down.png" alt="境界線画像" class="bg-line">
             </section>
 
-            <section class="section main-contents">
+            <section class="main-contents">
                 <h2 class="ttl-main">Shop Date</h2>
-                <div class="main-contents-inner">
+                <div class="main-contents-inner shopdate">
                     <div class="shopdate-item">
                         <img src="img/img_index_shop_kikusui.png" alt="bleu paon bake shop 菊水本店" class="js-inview">
-                        <p class="shopdate-txt">札幌市白石区菊水２条３丁目1−25<br>TEL：011-817-0300 　FAX：011-817-0300<br>ベイクショップ営業時間：10:00〜19:00<br>カフェ営業時間：11:00〜20:00 </p>
+                        <p class="main-contents-txt">札幌市白石区菊水２条３丁目1−25<br class="br-shop">TEL：011-817-0300<br class="br-shop">FAX：011-817-0300<br class="br-shop">ベイクショップ営業時間：10:00〜19:00<br class="br-shop">カフェ営業時間：11:00〜20:00 </p>
                     </div>
                     <div class="shopdate-item">
                         <img src="img/img_index_shop_maruyama.png" alt="bleu paon bake shop 円山店" class="js-inview">
-                        <p class="shopdate-txt">幌市中央区南２条西２４丁目２−３<br>アーティストハウス裏参道 1F<br>営業時間 (平日)：8:00〜16:00<br>(土日祝)：10:00〜18:00<br>※カフェを運営しているのは菊水店のみ </p>
+                        <p class="main-contents-txt">幌市中央区南２条西２４丁目２−３<br class="br-shop">アーティストハウス裏参道 1F<br class="br-shop">営業時間<br class="br-shop">(平日)：8:00〜16:00<br class="br-shop">(土日祝)：10:00〜18:00<br class="br-shop">※カフェを運営しているのは菊水店のみ </p>
                     </div>
-                    <div class="btn-index-kochira">
-                        <a href="about.html" class="btn-index-kochira-link"><img src="img/btn_index_kochira.png" alt="詳しくはこちら"></a>
-                    </div>
-                    <!--btn-top-->
                 </div>
                 <!--main-contents-inner-->
-                <div class="bg-main-end"><img src="img/bg_footer_white.png" alt="背景画像"></div>
+                <div class="btn-index-kochira">
+                    <a href="cafe.html" class="btn-index-kochira-link shop">詳しくはこちら</a>
+                </div>
+                <!--btn-index-kochira-->
             </section>
         </div>
         <!--wrap-->
+        <img src="img/bg_footer_white.png" alt="背景画像">
     </main>
 
     <footer class="footer">
         <div class="wrap">
             <div class="footer-logo"><img src="img/logo_bleupaon.png" alt="logo"></div>
-            <nav class="gnav">
-                <ul class="gnav-list">
-                    <li class="gnav-list-item">
-                        <a href="index.html" class="gnav-list-link">Home</a>
+            <nav class="gnav gnav-footer">
+                <ul class="gnav-list gnav-footer-list">
+                    <li class="gnav-item">
+                        <a href="index.html" class="gnav-link gnav-footer-top">Home</a>
                     </li>
-                    <li class="gnav-list-item">
-                        <a href="about.html" class="gnav-list-link">About</a>
+                    <li class="gnav-item">
+                        <a href="about.html" class="gnav-link">About</a>
                     </li>
-                    <li class="gnav-list-item">
-                        <a href="cafe.html" class="gnav-list-link">Cafe</a>
+                    <li class="gnav-item">
+                        <a href="cafe.html" class="gnav-link">Cafe</a>
                     </li>
-                    <li class="gnav-list-item">
-                        <a href="dolce.html" class="gnav-list-link">Dolce</a>
+                    <li class="gnav-item">
+                        <a href="dolce.html" class="gnav-link">Dolce</a>
                     </li>
-                    <li class="gnav-list-item">
-                        <a href="contact.html" class="gnav-list-link">Contact</a>
+                    <li class="gnav-item">
+                        <a href="contact.html" class="gnav-link">Contact</a>
                     </li>
                 </ul>
             </nav>
-            <div class="bn-footer-hkd-dolce"><a href="" class="bn-footer-hkd-dolce-link">北海道ドルチェ</a></div>
+            <div class="bn-footer-hkd-dolce"><a href="https://hokkaido-dolce.jp" class="bn-footer-hkd-dolce-link" target="_blank">北海道ドルチェ</a></div>
             <p class="footer-copyrights"><small>&copy; copyright bleupaon</small></p>
         </div>
         <!--wrap-->

@@ -106,7 +106,8 @@ body {
   font-family: メイリオ, Meiryo, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   font-size: 10px;
   color: #333;
-  line-height: 1.5; }
+  line-height: 1.5;
+  background: url(../img/bg_footer.jpg) no-repeat center bottom fixed; }
 
 img {
   max-width: 100%;
@@ -115,9 +116,8 @@ img {
 
 .wrap {
   margin: 0 auto; }
-  @media screen and (min-width: 768px) {
-    .wrap {
-      width: 1200px; } }
+  .wrap-main {
+    background-color: #fff; }
 
 .ttl-main,
 .gnav-link {
@@ -131,15 +131,20 @@ a {
 
 .header {
   position: relative;
-  text-align: center; }
+  text-align: center;
+  background-color: #fff; }
   .header-logo {
     width: calc(150/320*100%);
+    max-width: 250px;
     position: absolute;
     top: 20px;
     left: 0;
     right: 0;
-    bottom: 0;
     margin: auto; }
+    @media screen and (min-width: 768px) {
+      .header-logo {
+        width: calc(150/1200*100%);
+        min-width: 180px; } }
 
 .slider {
   display: none; }
@@ -147,45 +152,113 @@ a {
 .slider.slick-initialized {
   display: block; }
 
-.section {
+.js-inview-slide {
+  -webkit-transition: .8s;
+  -o-transition: .8s;
+  transition: .8s;
+  opacity: 0; }
+
+.js-inview-header {
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+  -webkit-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
+  opacity: 0; }
+
+.anime-header {
+  opacity: 1; }
+
+.main-contents {
   padding: 50px 15px;
   font-size: 1.8rem;
   text-align: center; }
   @media screen and (min-width: 768px) {
-    .section {
+    .main-contents {
+      padding: 80px 0; } }
+  @media screen and (min-width: 768px) {
+    .main-contents-inner {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; } }
-
-.main-contents-txtbox {
-  text-align: left; }
-
-.main-contents-txt {
-  margin: 30px 0; }
-  .main-contents-txt br {
-    display: none; }
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      max-width: 1200px;
+      padding: 60px 0;
+      margin: 0 auto; } }
+  .main-contents-txtbox {
+    text-align: left; }
     @media screen and (min-width: 768px) {
-      .main-contents-txt br {
-        display: block; } }
+      .main-contents-txtbox {
+        margin: 0 30px;
+        font-weight: bold; } }
+  .main-contents-txt {
+    margin: 30px 0; }
+    .main-contents-txt br {
+      display: none; }
+      @media screen and (min-width: 768px) {
+        .main-contents-txt br {
+          display: block; } }
+
+.flex-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse; }
 
 .pick-up-item {
-  width: calc(142/320*100%);
-  min-width: calc(150/320*100%);
-  line-height: calc(172/320*100%);
-  text-align: center;
-  vertical-align: bottom;
-  padding-top: 110px;
-  margin: 5px; }
+  width: 150px;
+  height: 150px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 10px 5px;
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .pick-up-item {
+      width: calc(300/1200*100%);
+      min-width: calc(300/1200*100%);
+      height: 300px;
+      padding: 0;
+      margin: 0; } }
   .pick-up-item-1 {
     background: url(../img/img_index_pic1.png) no-repeat center center/contain; }
+    @media screen and (min-width: 768px) {
+      .pick-up-item-1 {
+        background-size: auto; } }
   .pick-up-item-2 {
     background: url(../img/img_index_pic2.png) no-repeat center center/contain; }
+    @media screen and (min-width: 768px) {
+      .pick-up-item-2 {
+        background-size: auto; } }
   .pick-up-item-3 {
     background: url(../img/img_index_pic3.png) no-repeat center center/contain; }
+    @media screen and (min-width: 768px) {
+      .pick-up-item-3 {
+        background-size: auto; } }
   .pick-up-item-4 {
     background: url(../img/img_index_pic4.png) no-repeat center center/contain; }
+    @media screen and (min-width: 768px) {
+      .pick-up-item-4 {
+        background-size: auto; } }
 
-.bg-line {
+.pick-up-txt {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0; }
+  @media screen and (min-width: 768px) {
+    .pick-up-txt {
+      bottom: 40px;
+      left: 10px; } }
+
+@media screen and (min-width: 768px) {
+  .pick-up-txt.dolce {
+    position: absolute;
+    left: -20px; } }
+
+.main-contents-inner.pick-up-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,25 +266,101 @@ a {
   -ms-flex-pack: center;
   justify-content: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  background: url(../img/img_index_pic_line_up.png) no-repeat center top, url(../img/img_index_pic_line_down.png) no-repeat center bottom; }
+  flex-wrap: wrap; }
+  @media screen and (min-width: 768px) {
+    .main-contents-inner.pick-up-box {
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      margin: 0 auto;
+      padding: 0; } }
+
+.bg-line {
+  vertical-align: middle; }
+
+.footer {
+  text-align: center;
+  padding: 50px 15px; }
+  @media screen and (min-width: 768px) {
+    .footer {
+      text-align: right; } }
 
 .gnav {
-  display: none; }
+  margin: 40px 0 0 0; }
   .gnav-link {
     font-size: 3rem;
-    width: 100%;
     line-height: 70px;
-    color: #333;
-    background-color: #81d8d0; }
+    color: #fff; }
     .gnav-link:hover {
-      color: #ff4242;
-      background-color: #fff; }
+      color: #ff4242; }
+  @media screen and (min-width: 768px) {
+    .gnav-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .gnav-link {
+      width: auto;
+      padding: 0 20px; } }
+  @media screen and (max-width: 768px) {
+    .gnav-header {
+      display: none !important; } }
+  @media screen and (min-width: 768px) {
+    .gnav-header {
+      display: block !important;
+      position: absolute;
+      top: 130px;
+      left: 0;
+      right: 0;
+      margin: auto; } }
+  .gnav-footer-list {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+  @media screen and (max-width: 768px) {
+    .gnav-320 {
+      display: none;
+      margin: 0; }
+      .gnav-320-link {
+        color: #333;
+        background-color: #81d8d0; }
+        .gnav-320-link:hover {
+          background-color: #fff;
+          border-bottom: 1px solid #81d8d0; } }
 
 .btn-index-menu320 {
   position: absolute;
   top: 20px;
   right: 20px; }
+
+.bn-footer-hkd-dolce-link {
+  display: block;
+  width: 274px;
+  height: 52px;
+  text-indent: -9999px;
+  background: url(../img/logo_hkd_dolce.png) no-repeat center center;
+  margin: 50px auto 0 auto; }
+  .bn-footer-hkd-dolce-link:hover {
+    opacity: .5; }
+  @media screen and (min-width: 768px) {
+    .bn-footer-hkd-dolce-link {
+      margin-right: 0; } }
+
+.btn-index-kochira-link {
+  display: block;
+  text-indent: -9999px;
+  width: 195px;
+  height: 55px;
+  background: url(../img/btn_index_kochira.png) no-repeat center center; }
+  .btn-index-kochira-link:hover {
+    opacity: .5; }
+  @media screen and (max-width: 768px) {
+    .btn-index-kochira-link {
+      margin: 0 auto; } }
+
+.btn-index-kochira-link.shop {
+  margin: 0 auto; }
 
 .menu-trigger,
 .menu-trigger span {
@@ -226,6 +375,9 @@ a {
   position: relative;
   width: 50px;
   height: 44px; }
+  @media screen and (min-width: 768px) {
+    .menu-trigger {
+      display: none; } }
 
 .menu-trigger span {
   position: absolute;
@@ -480,6 +632,16 @@ a {
       color: black;
       opacity: 0.75; }
 
+@media screen and (min-width: 768px) {
+  .shopdate-item {
+    margin: 0 30px; } }
+
+.main-contents-inner.shopdate {
+  padding: 30px 0; }
+
+br.br-shop {
+  display: block; }
+
 .js-inview {
   -webkit-transition: .8s;
   -o-transition: .8s;
@@ -495,9 +657,21 @@ a {
 
 .bg-3 {
   background: url(../img/bg_index_about.png) no-repeat -30px center; }
+  @media screen and (min-width: 768px) {
+    .bg-3 {
+      margin: 0 auto;
+      background: url(../img/bg_index_about.png) no-repeat center center; } }
 
 .bg-4 {
   background: url(../img/bg_index_cafe.png) no-repeat -30px center; }
+  @media screen and (min-width: 768px) {
+    .bg-4 {
+      margin: 0 auto;
+      background: url(../img/bg_index_cafe.png) no-repeat center center; } }
 
 .bg-0 {
   background: url(../img/bg_index_dolce.png) no-repeat -30px center; }
+  @media screen and (min-width: 768px) {
+    .bg-0 {
+      margin: 0 auto;
+      background: url(../img/bg_index_dolce.png) no-repeat center center; } }

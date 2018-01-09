@@ -1,0 +1,7 @@
+.footer {
+    text-align: center;
+    padding: 50px 15px;
+    @media screen and (min-width: 768px) {
+        text-align: right;
+    }
+}

@@ -1,14 +1,19 @@
 .header {
     position: relative;
     text-align: center;
+    background-color: #fff;
     &-logo {
         width: calc(150/320*100%);
+        max-width: 250px;
         position: absolute;
         top: 20px;
         left: 0;
         right: 0;
-        bottom: 0;
         margin: auto;
+        @media screen and (min-width: 768px) {
+            width: calc(150/1200*100%);
+            min-width: 180px;
+        }
     }
 }
 
@@ -18,4 +23,20 @@
 
 .slider.slick-initialized {
     display: block;
+}
+
+//js-inview-------------------------------
+.js-inview-slide {
+    transition: .8s;
+    opacity: 0;
+}
+
+.js-inview-header {
+    transition: 2s;
+    transition-delay: 1s;
+    opacity: 0;
+}
+
+.anime-header {
+    opacity: 1;
 }

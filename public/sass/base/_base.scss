@@ -5,6 +5,7 @@ body {
     font-size: 10px;
     color: $fc;
     line-height: 1.5;
+    background: url(../img/bg_footer.jpg) no-repeat center bottom fixed;
 }
 
 img {
@@ -14,10 +15,10 @@ img {
 }
 
 .wrap {
-    margin: 0 auto;
-    @media screen and (min-width: 768px) {
-        width: 1200px;
+    &-main {
+        background-color: #fff;
     }
+    margin: 0 auto;
 }
 
 .ttl-main,

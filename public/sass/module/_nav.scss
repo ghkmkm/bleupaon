@@ -1,14 +1,57 @@
 .gnav {
-    display: none;
+    //ベース----------------------------------
+    margin: 40px 0 0 0;
     &-link {
         font-size: 3rem;
-        width: 100%;
         line-height: 70px;
-        color: $fc;
-        background-color: $tc;
+        color: $fc2;
         &:hover {
             color: $hc;
-            background-color: $fc2;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        &-list {
+            display: flex;
+            justify-content: center;
+        }
+        &-link {
+            width: auto;
+            padding: 0 20px;
+        }
+    }
+    //PCヘッダー-------------------------------
+    &-header {
+        @media screen and (max-width: 768px) {
+            display: none !important;
+        }
+        @media screen and (min-width: 768px) {
+            display: block !important;
+            position: absolute;
+            top: 130px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    }
+    //PCフッター-------------------------------
+    &-footer {
+        &-list {
+            justify-content: flex-end;
+        }
+    }
+    //スマホ-----------------------------------
+    &-320 {
+        @media screen and (max-width: 768px) {
+            display: none;
+            margin: 0;
+            &-link {
+                color: $fc;
+                background-color: $tc;
+                &:hover {
+                    background-color: #fff;
+                    border-bottom: 1px solid $tc;
+                }
+            }
         }
     }
 }

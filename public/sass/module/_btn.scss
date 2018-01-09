@@ -4,6 +4,41 @@
     right: 20px;
 }
 
+.bn-footer-hkd-dolce-link {
+    display: block;
+    width: 274px;
+    height: 52px;
+    text-indent: -9999px;
+    background: url(../img/logo_hkd_dolce.png) no-repeat center center;
+    margin: 50px auto 0 auto;
+    &:hover {
+        opacity: .5;
+    }
+    @media screen and (min-width: 768px) {
+        margin-right: 0;
+    }
+}
+
+.btn-index-kochira {
+    &-link {
+        display: block;
+        text-indent: -9999px;
+        width: 195px;
+        height: 55px;
+        background: url(../img/btn_index_kochira.png) no-repeat center center;
+        &:hover {
+            opacity: .5;
+        }
+        @media screen and (max-width: 768px) {
+            margin: 0 auto;
+        }
+    }
+}
+
+.btn-index-kochira-link.shop {
+    margin: 0 auto;
+}
+
 //ハンバ-ガ-メニュ-ここから--------------------------
 .menu-trigger,
 .menu-trigger span {
@@ -16,6 +51,9 @@
     position: relative;
     width: 50px;
     height: 44px;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
 .menu-trigger span {
