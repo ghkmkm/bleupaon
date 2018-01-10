@@ -25,18 +25,3 @@
     display: block;
 }
 
-//js-inview-------------------------------
-.js-inview-slide {
-    transition: .8s;
-    opacity: 0;
-}
-
-.js-inview-header {
-    transition: 2s;
-    transition-delay: 1s;
-    opacity: 0;
-}
-
-.anime-header {
-    opacity: 1;
-}
