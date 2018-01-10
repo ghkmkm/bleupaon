@@ -3,10 +3,13 @@
         font-size: 1.8rem;
         text-align: center;
         @media screen and (min-width: 768px) {
+            &:first-child {
+                padding: 160px 0 80px 0;
+            }
             padding: 80px 0;
         }
         &-inner {
-            @media screen and (min-width: 768px) {
+            @media screen and (min-width: 1200px) {
                 display: flex;
                 justify-content: center;
                 max-width: 1200px;
@@ -15,20 +18,22 @@
             }
         }
         &-txtbox {
-            text-align: left;
-            @media screen and (min-width: 768px) {
-                margin: 0 30px;
+            text-align: center;
+            @media screen and (min-width: 1200px) {
+                text-align: left;
+                margin: 0 35px;
                 font-weight: bold;
             }
         }
         &-txt {
-            margin: 30px 0;
-            br {
-                display: none;
-                @media screen and (min-width: 768px) {
-                    display: block;
-                }
-            }
+            margin: 35px 0;
+        }
+    }
+    
+    br.none {
+        display: none;
+        @media screen and (min-width: 768px) {
+            display: block;
         }
     }
     

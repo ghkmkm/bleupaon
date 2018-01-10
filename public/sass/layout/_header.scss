@@ -2,18 +2,29 @@
     position: relative;
     text-align: center;
     background-color: #fff;
+    &-slide {
+        &-img {
+            width: 100%;
+        }
+    }
     &-logo {
         width: calc(150/320*100%);
         max-width: 250px;
         position: absolute;
-        top: 20px;
+        top: 30px;
         left: 0;
         right: 0;
         margin: auto;
         @media screen and (min-width: 768px) {
             width: calc(150/1200*100%);
             min-width: 180px;
+            position: absolute;
+            top: calc(60/1200*100%);
+            left: 0;
+            right: 0;
+            margin: auto;
         }
+        
     }
 }
 
@@ -24,4 +35,3 @@
 .slider.slick-initialized {
     display: block;
 }
-

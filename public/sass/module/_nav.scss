@@ -5,9 +5,6 @@
         font-size: 3rem;
         line-height: 70px;
         color: $fc2;
-        &:hover {
-            color: $hc;
-        }
     }
     @media screen and (min-width: 768px) {
         &-list {
@@ -27,7 +24,14 @@
         @media screen and (min-width: 768px) {
             display: block !important;
             position: absolute;
-            top: 130px;
+            top: calc(300/1200*100%);
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        @media screen and (min-width: 1200px) {
+            position: absolute;
+            top: calc(260/1200*100%);
             left: 0;
             right: 0;
             margin: auto;
@@ -41,6 +45,7 @@
     }
     //スマホ-----------------------------------
     &-320 {
+        display: none;
         @media screen and (max-width: 768px) {
             display: none;
             margin: 0;
@@ -50,8 +55,17 @@
                 &:hover {
                     background-color: #fff;
                     border-bottom: 1px solid $tc;
+                    color: $hc;
                 }
             }
         }
     }
+}
+
+//今いるページのハイライト--------------------------------
+#about .current,
+#cafe .current,
+#dolce .current,
+#contact .current {
+    color: $hc;
 }
