@@ -46,11 +46,21 @@ $(function () {
         }
     });
 
-    $('.show-drop').on('inview', function (event, isInView, visiblePartX, visiblePartY) {
+    //フェード＆スライドイン
+    $('.js-show-drop').on('inview', function (event, isInView, visiblePartX, visiblePartY) {
         if (isInView) {
             $(this).stop().addClass('show-drop2');
         } else {
             $(this).stop().removeClass('show-drop2');
+        }
+    });
+
+    //フェード＆スライドイン
+    $('.js-show-drop-re').on('inview', function (event, isInView, visiblePartX, visiblePartY) {
+        if (isInView) {
+            $(this).stop().addClass('show-drop-re2');
+        } else {
+            $(this).stop().removeClass('show-drop-re2');
         }
     });
 
@@ -59,6 +69,15 @@ $(function () {
     $(".gnav-footer-top").stop().click(function () {
         $("html,body").stop().animate({
             scrollTop: 0
+        }, 700);
+        return false;
+    });
+
+    //インデックスのコンタクトリンク スムーススクロール-------
+    $(".gnav-link-contact").click(function () {
+        var target = $($(this).attr("href")).offset().top;
+        $("html,body").stop().animate({
+            scrollTop: target
         }, 700);
         return false;
     });

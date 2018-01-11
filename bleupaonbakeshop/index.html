@@ -21,9 +21,8 @@
             <li class="header-slide-item"><img src="img/bg_header_about.jpg" alt="スライド画像" class="header-slide-img"></li>
             <li class="header-slide-item"><img src="img/bg_header_cafe.jpg" alt="スライド画像" class="header-slide-img"></li>
             <li class="header-slide-item"><img src="img/bg_header_dolce.jpg" alt="スライド画像" class="header-slide-img"></li>
-            <li class="header-slide-item"><img src="img/bg_header_contact.jpg" alt="スライド画像" class="header-slide-img"></li>
         </ul>
-        <h1 class="header-logo js-inview-header"><img src="img/logo_bleupaon.png" alt="logo"></h1>
+        <h1 class="header-logo js-inview-header"><img src="img/logo_bleupaon.png" alt="BleuPaonBAKESHOP"></h1>
         <div class="btn-index-menu320">
             <a class="menu-trigger" href="#">
                 <span></span>
@@ -49,7 +48,7 @@
                     <a href="dolce.html#lead" class="gnav-link gnav-header-link bt-hover-color">Dolce</a>
                 </li>
                 <li class="gnav-item">
-                    <a href="contact.html#form" class="gnav-link gnav-header-link bt-hover-color">Contact</a>
+                    <a href="#contact" class="gnav-link gnav-header-link bt-hover-color gnav-link-contact">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -70,7 +69,7 @@
                     <a href="dolce.html#lead" class="gnav-link gnav-320-link">Dolce</a>
                 </li>
                 <li class="gnav-item gnav-320-item">
-                    <a href="contact.html#form" class="gnav-link gnav-320-link">Contact</a>
+                    <a href="#contact" class="gnav-link gnav-320-link  gnav-link-contact">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -171,6 +170,53 @@
                 </div>
                 <!--btn-index-kochira-->
             </section>
+
+            <section id="contact" class="main-contents">
+                <h2 class="ttl-main">Contact</h2>
+                <form action="#" method="get" class="form">
+                    <p class="form-caption">ご意見・ご感想などありましたら下記のフォーム<br class="none">または、メール・お電話よりお伺いしております。<br class="none">お気軽にご連絡ください。</p>
+                    <dl class="form-list">
+                        <div class="form-flex">
+                            <dt class="form-item"><label for="name">お名前</label></dt>
+                            <dd class="form-item-dd">
+                                <input type="text" name="text" id="name" required placeholder="例）山田 花子">
+                            </dd>
+                        </div>
+
+                        <div class="form-flex">
+                            <dt class="form-item"><label for="mail">メールアドレス</label></dt>
+                            <dd class="form-item-dd">
+                                <input type="email" name="mail" id="mail" required placeholder="例）aaa@aaa.com">
+                            </dd>
+                        </div>
+
+                        <div class="form-flex">
+                            <dt class="form-item">お問い合わせ内容</dt>
+                            <dd class="form-item-dd">
+                                <label for="q1">
+                                    <input type="radio" name="contact" id="q1" value="商品" checked> 商品について
+                                    </label>
+                                <label for="q2">
+                                       <input type="radio" name="contact" id="q2" value="店舗"> 店舗について
+                                       </label>
+                                <label for="q3">
+                                       <input type="radio" name="contact" id="q3" value="サービス"> サービスについて
+                                       </label>
+                            </dd>
+                        </div>
+
+                        <div class="form-flex">
+                            <dt class="form-item"><label for="comment">コメント</label></dt>
+                            <dd class="form-item-dd">
+                                <textarea name="textarea" id="comment" required placeholder="ご意見・ご感想をお寄せください"></textarea>
+                            </dd>
+                        </div>
+                    </dl>
+                    <input type="reset" value="入力をリセット">
+                    <input type="submit" value="送信する">
+                </form>
+
+            </section>
         </div>
         <!--wrap-->
         <img src="img/bg_footer_white.png" alt="背景画像">
@@ -194,7 +240,7 @@
                     <a href="dolce.html#lead" class="gnav-link bt-hover-color">Dolce</a>
                 </li>
                 <li class="gnav-item">
-                    <a href="contact.html#form" class="gnav-link bt-hover-color">Contact</a>
+                    <a href="#contact" class="gnav-link bt-hover-color gnav-link-contact">Contact</a>
                 </li>
             </ul>
         </nav>

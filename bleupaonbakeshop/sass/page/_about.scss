@@ -5,7 +5,9 @@
 
 .shop-name {
     font-size: 2rem;
-    border-bottom: 5px solid $tc;
+    @media screen and (max-width: 1200px) {
+        font-weight: normal;
+    }
 }
 
 .map {
@@ -14,10 +16,18 @@
     height: 300px;
     margin: 0 auto;
     @media screen and (min-width: 768px) {
-        height: 500px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
     }
 }
 
 .shop2 {
     margin-top: 80px;
+}
+
+#about .lead {
+    @media screen and (max-width: 768px) {
+        height: auto;
+    }
 }

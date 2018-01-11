@@ -1,0 +1,7 @@
+#dolce .wrap-kasou {
+  background: url(../img/bg_cafe_left.png) no-repeat left 30%, url(../img/bg_cafe_right.png) no-repeat right 55%, url(../img/bg_cafe_left.png) no-repeat left 80%;
+  background-color: #fff; }
+  @media screen and (min-width: 1200px) {
+    #dolce .wrap-kasou {
+      background: url(../img/bg_cafe_left.png) no-repeat left 35%, url(../img/bg_cafe_right.png) no-repeat right 55%, url(../img/bg_cafe_left.png) no-repeat left 85%;
+      background-color: #fff; } }

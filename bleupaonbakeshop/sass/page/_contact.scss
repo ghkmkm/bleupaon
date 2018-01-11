@@ -1,0 +1,103 @@
+#contact {
+    background: url(../img/bg_contact.png) no-repeat center 60%;
+    @media screen and (min-width: 768px) {
+        background: url(../img/bg_contact.png) no-repeat center 60%/contain;
+    }
+}
+
+dt.border {
+    font-weight: normal;
+}
+
+.form {
+    font-weight: bold;
+    max-width: 1200px;
+    margin: 0 auto;
+    &-caption {
+        width: 100%;
+    }
+    &-list {
+        @media screen and (min-width: 768px) {
+            margin-top: 35px;
+        }
+    }
+    &-item {
+        width: calc(150/320*100%);
+        margin: 50px auto 0 auto;
+        @media screen and (min-width: 768px) {
+            width: calc(200/1200*100%);
+            text-align: right;
+            margin: 0 20px 0 0;
+            padding: 5px 15px 15px;
+        }
+        &-dd {
+            margin-top: 10px;
+            @media screen and (min-width: 768px) {
+                width: calc(500/1200*100%);
+                text-align: left;
+                margin: 0;
+            }
+        }
+    }
+    &-flex {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+input[type="text"],
+[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: $tc;
+    border-radius: 15px;
+    font-size: 1.6rem;
+    transition: .5s;
+    &:hover {
+        background-color: $hc50;
+    }
+}
+
+input[type="radio"] {
+    margin-bottom: 5px;
+}
+
+#comment {
+    font-family: メイリオ, Meiryo, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    border: none;
+    background-color: $tc;
+    border-radius: 15px;
+    font-size: 1.6rem;
+    transition: .5s;
+    &:hover {
+        background-color: $hc50;
+    }
+}
+
+input[type="reset"],
+[type="submit"] {
+    width: 150px;
+    height: 50px;
+    background-color: $tc;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 5px;
+    color: $fc2;
+    margin-top: 15px;
+    transition: .5s;
+    &:hover {
+        background-color: $hc;
+    }
+    @media screen and (min-width: 768px) {
+        margin: 0 10px;
+    }
+}

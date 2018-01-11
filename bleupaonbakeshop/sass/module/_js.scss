@@ -25,13 +25,24 @@
     opacity: 1;
 }
 
-.show-drop {
+.js-show-drop {
     transition: .8s;
     transform: translateX(-40px);
     opacity: 0;
 }
 
 .show-drop2 {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.js-show-drop-re {
+    transition: .8s;
+    transform: translateX(40px);
+    opacity: 0;
+}
+
+.show-drop-re2 {
     opacity: 1;
     transform: translateX(0);
 }
